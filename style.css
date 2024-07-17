@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('../img/ai.jpg');
+    background-position: center ;
+    background-size: cover;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container {
+    padding: 10px;
+    background-color: #acaaaa;
+    width: 550px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.container div {
+    margin: 10px auto;
+    text-transform:capitalize;
+}
+
+.container .title {
+    font-size: 17px;
+    color: #05354b;
+}
+
+.container .ask-section input {
+    border: none;
+    outline: none;
+    padding: 10px 3px;
+    padding-left:10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 400px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.container .ask-section input:focus {
+    outline: 2px solid #0EA5E9;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.container .ask-section button {
+    text-transform: capitalize;
+    padding: 10px;
+    border: none;
+    width: 70px;
+    margin-left: 20px;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    transition: all 0.3s ease;
+
+}
+.container .ask-section button:hover {
+    border: 1px solid #0EA5E9;
+    transform: scale(1.1);
+}
+
+.container .content {
+    border: 1px solid white;
+    padding: 20px;
+    width: 90%;
+}
+
+@media (max-width:569px){
+    .container {
+        width: 370px;
+        flex-wrap: wrap;
+    }
+    .container .title {
+        font-size: 12px;
+    }
+    .container .ask-section{
+        margin: 10px;
+    }
+    .container .ask-section input,
+    .container .ask-section button {
+        width: 100%;
+        margin: 10px;
+    }
+    
+    .container .ask-section input:focus {
+        outline: none;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    .container .ask-section button:hover{
+        transform: scale(1);
+    }
+}
